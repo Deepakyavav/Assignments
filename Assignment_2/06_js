@@ -1,0 +1,16 @@
+function extractPersonDetails(person) {
+    const { name, address: { street } } = person;
+    return { name, street };
+}
+
+let person = {
+    name: "John Doe",
+    age: 30,
+    address: {
+        street: "123 Main St",
+        city: "Anytown",
+        country: "USA"
+    }
+};
+
+console.log(extractPersonDetails(person)); // { name: 'John Doe', street: '123 Main St' }

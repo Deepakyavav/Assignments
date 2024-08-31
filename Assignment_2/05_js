@@ -1,0 +1,9 @@
+function findMinMax(arr) {
+    return {
+        max: Math.max(...arr),
+        min: Math.min(...arr)
+    };
+}
+
+let values = [5, 2, 7, 1, 9];
+console.log(findMinMax(values)); // { max: 9, min: 1 }
